@@ -1,0 +1,85 @@
+.contact {
+  padding: 5rem 6rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 10rem;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+}
+.avatar div {
+  width: 25rem;
+  height: 0.2rem;
+  background-color: #001d3d;
+  position: relative;
+}
+.avatar div::before {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  background-color: #001d3d;
+  top: 100%;
+  left: 0;
+  transform: rotate(45deg) translate(-35%, -40%);
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+}
+.list a {
+  color: #001d3d;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .contact {
+    padding: 5rem 4rem 1rem;
+  }
+
+  .list {
+    gap: 4rem;
+  }
+  .list a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacnt {
+    padding: 5rem 2rem 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact {
+    padding: 5rem 1rem 1rem;
+  }
+
+  .avatar {
+    gap: 1rem;
+  }
+  .avatar div {
+    width: 10rem;
+  }
+
+  .list {
+    flex-wrap: wrap;
+  }
+  .list a {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,177 @@
+.experience {
+  padding: 5rem 6rem;
+  background-color: var(--primary);
+}
+
+.fields {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.fields .rule {
+  margin-top: 10rem;
+  height: inherit;
+  width: 0.1rem;
+  border-radius: 0.5rem;
+  background-color: #f4f4f47e;
+}
+
+.academic .heading,
+.academic .heading div,
+.work .heading,
+.work .heading div {
+  display: flex;
+  align-items: center;
+}
+.academic .heading,
+.work .heading {
+  gap: 3.5rem;
+}
+.academic div,
+.work div {
+  gap: 1rem;
+}
+.academic div .line,
+.work div .line {
+  width: 3rem;
+  height: 0.2rem;
+  background-color: var(--main-background);
+
+  position: relative;
+}
+.academic div .line::before,
+.work div .line::before {
+  content: "";
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--main-background);
+  right: -25%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.work div .line::before {
+  left: 0;
+}
+.academic h2,
+.work h2 {
+  font-size: 2rem;
+  color: var(--main-background);
+}
+
+.fields .content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.academic .content,
+.work .content {
+  margin-top: 4rem;
+}
+.academic .content .card,
+.work .content .card {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: 1rem;
+  border: 1px solid var(--main-background);
+  border-radius: 0.5rem;
+  color: var(--main-background);
+}
+.work .content .card {
+  flex-direction: row;
+}
+.card .text .heading {
+  color: #f4f4f4b0;
+  justify-content: space-between;
+}
+.work .card .text .heading {
+  flex-direction: row;
+}
+.card .text h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 150%;
+  padding-bottom: 1rem;
+}
+.card .text p {
+  line-height: 150%;
+}
+
+@media (max-width: 1024px) {
+  .experience {
+    padding: 5rem 4rem;
+  }
+
+  .fields {
+    gap: 1rem;
+  }
+  .academic .heading,
+  .work .heading {
+    gap: 3rem;
+  }
+  .academic .heading h2,
+  .work .heading h2 {
+    font-size: 1.5rem;
+  }
+
+  .work .content .card,
+  .academic .content .card {
+    gap: 2rem;
+    width: 24rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .experience {
+    padding: 5rem 2rem;
+  }
+
+  .fields {
+    flex-direction: column;
+  }
+
+  .fields .rule {
+    margin: 4rem 0;
+    height: 0.1rem;
+    width: 100%;
+  }
+
+  .academic .heading,
+  .work .heading {
+    justify-content: space-between;
+  }
+  .academic .content .card,
+  .work .content .card {
+    width: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .experience {
+    padding: 5rem 1rem;
+  }
+
+  .academic .heading,
+  .wrok .heading {
+    gap: 1rem;
+  }
+  .academic div .line,
+  .work div .line {
+    width: 3rem;
+  }
+  .academic .content .card {
+    gap: 2rem;
+  }
+
+  .card .text p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .academic .heading h2,
+  .work .heading h2 {
+    font-size: 1.2rem;
+  }
+}

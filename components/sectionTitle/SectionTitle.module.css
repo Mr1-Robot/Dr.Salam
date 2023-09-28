@@ -1,0 +1,12 @@
+.heading {
+  text-align: center;
+  padding-bottom: 5.5rem;
+}
+.heading h1 {
+  font-size: 3rem;
+  padding-bottom: 0.5rem;
+  letter-spacing: 2.2px;
+}
+.heading p {
+  font-size: 1.5rem;
+}

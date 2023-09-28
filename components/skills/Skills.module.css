@@ -1,0 +1,99 @@
+.skills {
+  padding: 5rem 6rem;
+  background-color: var(--main-background);
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.content:nth-child(2) {
+  margin-bottom: 8.5rem;
+}
+.content .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.card div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.card div h2 {
+  font-size: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .skills {
+    padding: 5rem 4rem;
+  }
+
+  .card div h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills {
+    padding: 5rem 2rem;
+  }
+
+  .content:nth-child(2) {
+    margin-bottom: 4rem;
+  }
+  .content .card {
+    gap: 1rem;
+  }
+  .content .card img {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .card div svg {
+    width: 3rem;
+    height: 3rem;
+  }
+  .card div h2 {
+    font-size: 1rem;
+  }
+  .card div p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .skills {
+    padding: 5rem 1rem;
+  }
+
+  .content {
+    flex-wrap: wrap;
+  }
+  .content .card img {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .card {
+    padding: 1rem 0;
+  }
+  .card div {
+    gap: 0.5rem;
+  }
+  .card div svg {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+@media (max-width: 325px) {
+  .content {
+    justify-content: center;
+  }
+}

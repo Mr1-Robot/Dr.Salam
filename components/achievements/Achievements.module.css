@@ -1,0 +1,80 @@
+.achievements {
+  padding: 5rem 6rem;
+  min-height: 100vh;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.content .card {
+  border: 1px solid var(--primary);
+  border-radius: 0.5rem;
+  width: 25rem;
+  padding: 2rem;
+  background-color: #fff8b4;
+
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+
+  transition: all 0.3s ease;
+}
+.content .card:hover {
+  box-shadow: 0px 5px 15px 0px rgba(19, 111, 212, 0.2);
+}
+
+.card svg {
+  margin: 0 auto 2.5rem;
+}
+.card .heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 1rem;
+}
+
+.heading .line {
+  width: 10rem;
+  height: 0.15rem;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 0.2rem;
+}
+.heading p {
+  color: rgba(0, 29, 61, 0.78);
+}
+
+.card h2 {
+  color: #001d3d;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.card p {
+  font-size: 1.2rem;
+  color: #001d3d;
+  line-height: 150%;
+}
+
+@media (max-width: 1024px) {
+  .achievements {
+    padding: 5rem 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .achievements {
+    padding: 5rem 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .achievements {
+    padding: 5rem 1rem;
+  }
+
+  .heading .line {
+    width: 6rem;
+  }
+}

@@ -1,0 +1,64 @@
+.education {
+  padding: 5rem 6rem;
+  background-color: var(--primary);
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12rem;
+}
+
+.card {
+  width: 25rem;
+  border: 0.5px solid #f4f4f48e;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+.card span {
+  display: block;
+  font-size: 1rem;
+  color: rgba(244, 244, 244, 0.8);
+}
+.card h4 {
+  color: #f4f4f4;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+.card p {
+  font-size: 1rem;
+  color: #f4f4f4d9;
+  line-height: 150%;
+}
+
+@media (max-width: 1024px) {
+  .education {
+    padding: 5rem 4rem;
+  }
+
+  .content {
+    justify-content: space-between;
+    gap: 4rem;
+  }
+  .card {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .education {
+    padding: 5rem 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .education {
+    padding: 5rem 1rem;
+  }
+
+  .content .card img {
+    width: 16rem;
+    height: 21rem;
+  }
+}
