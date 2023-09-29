@@ -38,6 +38,7 @@
   color: var(--main-background);
   line-height: 150%;
   font-size: 1.5rem;
+  text-align: justify;
 }
 
 @media (max-width: 1024px) {
