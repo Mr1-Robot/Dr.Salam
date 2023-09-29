@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import Head from "next/head";
 import AboutMe from "@/components/aboutMe/AboutMe";
 import Achievements from "@/components/achievements/Achievements";
 import Experience from "@/components/experience/Experience";
@@ -15,6 +15,21 @@ const Home = () => {
   const [nav, setNav] = useState(false);
   return (
     <>
+      <Head>
+        <title>Dr. Salam J. Hillo - Civil Engineering Lecturer</title>
+        <meta
+          name="description"
+          content="Dr. Salam Jassem Hillo - Civil Engineering Lecturer at University of Technology. Explore my academic and work experience."
+        />
+
+        <meta
+          name="keywords"
+          content="salam j hillo, civil engineering, lecturer, university of technology, academic experience, work experience"
+        />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
+      </Head>
       <MainHeader nav={nav} setNav={setNav} />
       <Hero />
       <AboutMe />
